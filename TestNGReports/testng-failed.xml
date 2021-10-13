@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="2" verbose="0" name="SGA Role(failed)" parallel="classes">
+    <classes>
+      <class name="TestClassRoomTraining">
+        <methods>
+          <include name="ClassTraining"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestClassRoomTraining -->
+      <class name="deactivateActivateUserSDHead">
+        <methods>
+          <include name="setUp"/>
+          <include name="testDeactivateActivateUser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- deactivateActivateUserSDHead -->
+      <class name="trainingOverviewDashboardClient">
+        <methods>
+          <include name="testtrainingOverviewDashboard"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- trainingOverviewDashboardClient -->
+      <class name="usersSort">
+        <methods>
+          <include name="testusersSort"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- usersSort -->
+    </classes>
+  </test> <!-- SGA Role(failed) -->
+  <test thread-count="2" verbose="0" name="Trainer Role(failed)" parallel="classes">
+    <classes>
+      <class name="TrainingModuleClient">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="IsonLogin"/>
+        </methods>
+      </class> <!-- TrainingModuleClient -->
+      <class name="TestClassRoomTrainingRAdmin">
+        <methods>
+          <include name="setUp"/>
+          <include name="ClassTraining"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestClassRoomTrainingRAdmin -->
+      <class name="usersExportRAdmin">
+        <methods>
+          <include name="testUsersexport"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- usersExportRAdmin -->
+      <class name="importBulkUsersSDHead">
+        <methods>
+          <include name="setUp"/>
+          <include name="testImportBulkusers"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- importBulkUsersSDHead -->
+    </classes>
+  </test> <!-- Trainer Role(failed) -->
+  <test thread-count="2" verbose="0" name="Dashboard Scripts(failed)" parallel="classes">
+    <classes>
+      <class name="CopyTraining">
+        <methods>
+          <include name="SignIn"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- CopyTraining -->
+      <class name="EditTrainingRAdmin">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SignIn"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- EditTrainingRAdmin -->
+      <class name="TrainingModuleSDHead">
+        <methods>
+          <include name="IsonLogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TrainingModuleSDHead -->
+      <class name="CopyTrainingSDHead">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SignIn"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- CopyTrainingSDHead -->
+      <class name="AssessmentModule">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testAssessment"/>
+        </methods>
+      </class> <!-- AssessmentModule -->
+      <class name="AssessmentModuleSDHead">
+        <methods>
+          <include name="testAssessment"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- AssessmentModuleSDHead -->
+      <class name="lmsActiveUsersDashboardSDHead">
+        <methods>
+          <include name="testlmsActiveUsersDashboard"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- lmsActiveUsersDashboardSDHead -->
+    </classes>
+  </test> <!-- Dashboard Scripts(failed) -->
+</suite> <!-- Failed suite [Suite] -->

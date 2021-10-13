@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="SGA Role(failed)">
+    <classes>
+      <class name="usersExport">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testUsersexport"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- usersExport -->
+      <class name="TestClassRoomTrainingSDHead">
+        <methods>
+          <include name="ClassTraining"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestClassRoomTrainingSDHead -->
+      <class name="TrainingModule">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="IsonLogin"/>
+        </methods>
+      </class> <!-- TrainingModule -->
+      <class name="AssessmentModuleTrainer">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testAssessment"/>
+        </methods>
+      </class> <!-- AssessmentModuleTrainer -->
+    </classes>
+  </test> <!-- SGA Role(failed) -->
+</suite> <!-- Failed suite [Suite] -->
