@@ -32,8 +32,8 @@ public class addUser {
 		//String driverPath = "D:/Automation/drivers/browsers";
 		//System.setProperty("webdriver.chrome.driver", driverPath+"/chrome/chromedriver.exe");
 
-		String driverPath = "D:/Automation/drivers/browsers";
-		System.setProperty("webdriver.chrome.driver", driverPath+"/chrome/chromedriver.exe");
+		//String driverPath = "D:/Automation/drivers/browsers";
+		System.setProperty("webdriver.chrome.driver", driverPath+"/usr/bin/chromedriver");
 
 
 		DesiredCapabilities dc = new DesiredCapabilities();
