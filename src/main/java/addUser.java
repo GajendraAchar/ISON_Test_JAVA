@@ -49,7 +49,7 @@ public class addUser {
 		options.addArguments("--disable-gpu");
 		options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 
-		driver = new ChromeDriver(options);	
+		//driver = new ChromeDriver(options);	
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
