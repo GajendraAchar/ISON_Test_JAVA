@@ -36,7 +36,7 @@ public class usersSort {
 	options.addArguments("--disable-gpu");
 	options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 
-	driver = new ChromeDriver(options);
+	//driver = new ChromeDriver(options);
     
     driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
