@@ -22,7 +22,7 @@ public class usersSort {
   public void setUp() throws Exception {
 	//String driverPath = "D:/Automation/drivers/browsers";
 	String driverPath = "/usr/bin/chromedriver";
-	System.setProperty("webdriver.chrome.driver", driverPath+"/chrome/chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", driverPath+"/usr/bin/chromedriver");
 	
 	DesiredCapabilities dc = new DesiredCapabilities();
     dc.setAcceptInsecureCerts(true);
