@@ -20,7 +20,8 @@ public class usersSort {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-	String driverPath = "D:/Automation/drivers/browsers";
+	//String driverPath = "D:/Automation/drivers/browsers";
+	String driverPath = "/usr/bin/chromedriver";
 	System.setProperty("webdriver.chrome.driver", driverPath+"/chrome/chromedriver.exe");
 	
 	DesiredCapabilities dc = new DesiredCapabilities();
